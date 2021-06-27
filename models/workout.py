@@ -1,6 +1,6 @@
 class Workout:
 
-    def __init__(self, exercise, sets,repetitions, rest_time, comments, id=None):
+    def __init__(self, exercise, sets, repetitions, rest_time, comments, id=None):
         self.exercise = exercise
         self.sets = sets
         self.repetitions = repetitions
