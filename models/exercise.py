@@ -7,7 +7,7 @@ class Exercise:
         self.personal_best = personal_best
         self.id = id
 
-#Rep Max - also known as "1rm" or "1 rep max": https://en.wikipedia.org/wiki/One-repetition_maximum
+#Rep Max - also known as "1rm" or "1 rep max": https://en.wikipedia.org/wiki/One-repetition_maximum, this will either be there pb or est 1rm (depending on which value is larger)
 
 #Personal Best - should be the highest number in this exercise the user has ever achived in the hisotry of recording/logging with the app
 

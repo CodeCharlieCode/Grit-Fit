@@ -17,4 +17,14 @@ class TestExercise(  unittest.TestCase  ):
         expected = "Push-up"
         actual = self.exercise_2.name_of_exercise
         self.assertEqual(expected, actual)
+
+    def test_rep_max(self):
+        expected = 100
+        actual = self.exercise_1.rep_max
+        self.assertEqual(expected, actual)
+
+    def test_personal_best(self):
+        expected = 32
+        actual = self.exercise_2.personal_best
+        self.assertEqual(expected, actual)
         
