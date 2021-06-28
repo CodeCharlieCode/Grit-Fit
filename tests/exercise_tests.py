@@ -12,4 +12,9 @@ class TestExercise(  unittest.TestCase  ):
         expected = "Loaded"
         actual = self.exercise_1.exercise_type
         self.assertEqual(expected, actual)
+
+    def test_name_of_exercsie(self):
+        expected = "Push-up"
+        actual = self.exercise_2.name_of_exercise
+        self.assertEqual(expected, actual)
         
