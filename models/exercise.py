@@ -9,4 +9,5 @@ class Exercise:
 
 #Rep Max - also known as "1rm" or "1 rep max": https://en.wikipedia.org/wiki/One-repetition_maximum
 
+#Personal Best - should be the highest number in this exercise the user has ever achived in the hisotry of recording/logging with the app
 
