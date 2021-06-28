@@ -27,4 +27,9 @@ class TestExercise(  unittest.TestCase  ):
         expected = 32
         actual = self.exercise_2.personal_best
         self.assertEqual(expected, actual)
+
+    def test_id(self):
+        expected = 17
+        actual = self.exercise_2.id
+        self.assertEqual(expected, actual)
         
