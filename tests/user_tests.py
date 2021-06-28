@@ -17,3 +17,19 @@ class TestUser(  unittest.TestCase  ):
         expected = "Round"
         actual = self.user_1.last_name
         self.assertEqual(expected, actual)
+
+    def test_gender(self):
+        expected = "female"
+        actual = self.user_2.gender
+        self.assertEqual(expected, actual)
+
+    def test_age(self):
+        expected = 26
+        actual = self.user_2.age
+        self.assertEqual(expected, actual)
+
+    def test_weight(self):
+        expected = 90.82
+        actual = self.user_1.weight
+        self.assertEqual(expected, actual)
+
