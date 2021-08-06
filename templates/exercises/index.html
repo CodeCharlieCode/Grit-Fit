@@ -2,12 +2,15 @@
 
 {% block content %}
 
-HELLO WORLD- This will diplay all the exercises
+ This will diplay all the exercises
 
 <div class ="exercise-info">
     {% for exercise in exercises %}
 
-    <li>{{exercise.rep_max}}</li>
+    <li>Exercise Type: {{exercise.exercise_type}}</li>
+    <li>Name of Exercise: {{exercise.name_of_exercise}}</li>
+    <li>Rep Max:{{exercise.rep_max}} </li>
+    <li>Personal Best: {{exercise.personal_best}}</li>
 </div>
 
     {% endfor %}
