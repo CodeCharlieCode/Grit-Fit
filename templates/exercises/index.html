@@ -4,15 +4,27 @@
 
  This will diplay all the exercises
 
-<div class ="exercise-info">
+<body class="exercises-background">
+    <h1>Exercises</h1>
+
+    <table class="exercise-table">
+        <tr>
+            <th><h2>Exercise Type</h2></th>
+            <th><h2>Name of Exercise</h2></th>
+            <th><h2>Rep Max</h2></th>
+            <th><h2>Personal Best:</h2></th>
+        </tr>
+        
     {% for exercise in exercises %}
-
-    <li>Exercise Type: {{exercise.exercise_type}}</li>
-    <li>Name of Exercise: {{exercise.name_of_exercise}}</li>
-    <li>Rep Max:{{exercise.rep_max}} </li>
-    <li>Personal Best: {{exercise.personal_best}}</li>
-</div>
-
+        
+            <td> {{exercise.exercise_type}} </td>
+            <td> {{exercise.name_of_exercise}} </td>
+            <td> {{exercise.rep_max}} </td>
+            <td> {{exercise.personal_best}} </td>
+        </div>
+        
+    </table>
+</body> 
     {% endfor %}
 
 {% endblock %}
