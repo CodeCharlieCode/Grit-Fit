@@ -7,3 +7,26 @@ def save(exercise):
     results = run_sql(sql, values)
     exercise.id = results[0]['id']
     return exercise
+
+def select_all():
+    exercises = []
+
+    sql = "SELECT * FROM exercises"
+    results = run_sql(sql)
+
+    for result in results:
+        exercise = Exercise(result['exercise_type'], result["name_of_exercise"], result["rep_max"], result["personal_best"], result["id"])
+        exercises.append(exercise)
+    return exercises
+
+
+def select(id):
+    exercise = None
+    sql = "SELECT * FROM exercises WHERE id =%s"
+    values = [id]
+    result = run_sql(sql, values)[0]
+
+    if result is not None:
+        exericse = Exercise(result['exercise_type'], result["name_of_exercise"], result["rep_max"], result["personal_best"], result["id"])
+    return exercise 
+
