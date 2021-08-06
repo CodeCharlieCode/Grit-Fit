@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+HELLO WORLD- This will diplay all the exercises
+
+<div class ="exercise-info">
+    {% for exercise in exercises %}
+
+    <li>{{execise.rep_max}}</li>
+</div>
+
+    {% endfor %}
+
+{% endblock %}
