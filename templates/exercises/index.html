@@ -2,29 +2,34 @@
 
 {% block content %}
 
- This will diplay all the exercises
+ This page will diplay all the exercises
+
+ <!-- User should be able to edit personal best but rep
+max shouldn't be changed as it will be a clacualted value dependent
+on the data that has been entered -->
 
 <body class="exercises-background">
     <h1>Exercises</h1>
 
     <table class="exercise-table">
-        <tr>
-            <th><h2>Exercise Type</h2></th>
-            <th><h2>Name of Exercise</h2></th>
-            <th><h2>Rep Max</h2></th>
-            <th><h2>Personal Best:</h2></th>
-        </tr>
+            <tr>
+                <th><h2>Exercise Type</h2></th>
+                <th><h2>Name of Exercise</h2></th>
+                <th><h2>Rep Max</h2></th>
+                <th><h2>Personal Best:</h2></th>
+            </tr>
         
-    {% for exercise in exercises %}
-        
-            <td> {{exercise.exercise_type}} </td>
-            <td> {{exercise.name_of_exercise}} </td>
-            <td> {{exercise.rep_max}} </td>
-            <td> {{exercise.personal_best}} </td>
-        </div>
-        
+         {% for exercise in exercises %}
+            <tr>
+                <td> {{exercise.exercise_type}} </td>
+                <td> {{exercise.name_of_exercise}} </td>
+                <td> {{exercise.rep_max}} </td>
+                <td> {{exercise.personal_best}} </td>
+            </tr>
+        {% endfor %}
     </table>
 </body> 
-    {% endfor %}
+    
 
 {% endblock %}
+

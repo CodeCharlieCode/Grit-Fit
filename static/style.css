@@ -1,0 +1,18 @@
+.exercise-table{
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgb(128, 172, 180);
+  }
+  
+  .exercise-table td{
+    /* border: 1px solid black; */
+    margin-right: 20px;
+    padding: 20px;
+  }
